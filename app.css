@@ -1,0 +1,117 @@
+body{
+    background-color: #f5d9df;
+    font-family: "nunito" sans-serif;
+}
+
+
+/* Change the color of CANDY text to red */
+.navbar-brand {
+    color: red !important; /* Use !important to override Bootstrap default styles */
+}
+
+/* Change link colors and hover effects */
+.nav-link {
+    color: black; /* Default color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.3em;
+    
+}
+
+/* Change link color on hover */
+.nav-link:hover {
+    color: red !important;  /* Hover color */
+}
+
+ /* Styling for the left column containing the message */
+.message {
+    font-size: 2em;
+}
+
+.message span {
+    color: red; /* Color red for the slashes */
+}
+
+/* Responsiveness for smaller screen sizes */
+@media (max-width: 768px) {
+    /* For screen sizes less than or equal to md, make the message text smaller */
+    .message {
+        font-size: 1.2em;
+    }
+
+    /* On smaller screens, hide the message and display the image */
+    .message {
+        display: none;
+    }
+
+    .img-fluid {
+        display: block; /* Ensure the image is visible */
+    }
+}
+
+/* For larger screen sizes */
+@media (min-width: 768px) {
+    .col-md-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ensure the left side content is centered on larger screens */
+    .message {
+        text-align: left;
+        font-weight: 100;
+    }
+}
+
+/* Styling for the image */
+.img-fluid {
+    max-width: 100%; /* Ensures the image stays within its column */
+    height: auto;
+}
+
+
+
+/* Museum of Candy Section */
+.heading {
+    color: red; /* Red color for "Museum of Candy" heading */
+    font-size: 2.5em; /* Font size for heading */
+    font-weight: 100;
+    margin-bottom: 10px; /* Space below heading */
+}
+.content {
+    color: #98676f; /* Light pink color for the text */
+    font-size: 1.2em; /* Font size for content */
+    text-align: center; /* Center-align the content */
+}
+.lolli-icon {
+    margin: 15px 0; /* Margin around the lollipop icon */
+}
+
+/* Add margin between content */
+.container-fluid {
+    margin-top: 7px; /* 7px margin above the content */
+}
+.col-10 {
+    padding: 10px; /* Padding inside the col-10 for spacing */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.8em; /* Smaller font size for heading */
+    }
+    .content {
+        font-size: 1em; /* Smaller font size for content */
+    }
+    .lolli-icon {
+        display: none; /* Hide lollipop icon on small screens */
+    }
+    .row.no-gutters {
+        flex-direction: column-reverse; /* Content moves above the image */
+    }
+}
+
+.navbar.scrolled{
+    background: rgb(222,196,222);
+    transition: 500ms;
+}
